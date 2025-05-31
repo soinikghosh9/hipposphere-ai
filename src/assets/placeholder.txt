@@ -1,0 +1,237 @@
+
+This file is a guide to help you replace all placeholder images in the HippoSphere AI application.
+
+**ACTION REQUIRED: You MUST rename YOUR image files to EXACTLY match the `Filename` listed for each entry below (case-sensitive, including the '.png' extension) and place them in the `./public/images/` directory.**
+
+The `./public/images/` directory path is relative to your `index.html` file. This means:
+- Your main project folder contains `index.html`.
+- Inside that same main project folder, you must have a folder named `public`.
+- Inside the `public` folder, you must have a folder named `images`.
+- All your renamed .png image files go into this `public/images/` folder.
+
+Example structure:
+YourProjectRoot/
+├── index.html
+├── public/
+│   └── images/
+│       ├── frontpage-bg.png
+│       ├── moodeng-profile.png
+│       └── ... (all other .png images listed below)
+└── ... (other project files like index.tsx, App.tsx, etc.)
+
+--- GENERAL & BACKGROUND IMAGES ---
+
+1.  **Front Page Background**
+    *   Filename: `frontpage-bg.png`
+    *   Path: `./public/images/frontpage-bg.png`
+    *   Used In: `screens/FrontPage.tsx`
+    *   Purpose: Main background image for the application's landing page.
+    *   Suggestion: A captivating, high-quality image representing the pygmy hippo habitat or the essence of the project. Recommended size: ~1920x1080.
+
+2.  **Welcome Screen Background (Optional Splash)**
+    *   Filename: `welcome-screen-bg.png`
+    *   Path: `./public/images/welcome-screen-bg.png`
+    *   Used In: `screens/WelcomeScreen.tsx`
+    *   Purpose: Background for the secondary welcome/loading screen.
+    *   Suggestion: Can be similar to or complementary to the front page background.
+
+3.  **Dashboard Background**
+    *   Filename: `dashboard-bg.png`
+    *   Path: `./public/images/dashboard-bg.png`
+    *   Used In: `screens/DashboardScreen.tsx`
+    *   Purpose: Background for the main dashboard area.
+    *   Suggestion: A lush, inviting habitat scene.
+
+--- NAVIGATION MENU IMAGES ---
+
+These images appear on the cards in the main navigation menu on the Dashboard.
+Suggested aspect ratio: Similar to a standard card (e.g., 4:3 or 16:9, displayed at h-48).
+
+4.  **Journal Navigation Card**
+    *   Filename: `nav-journal.png`
+    *   Path: `./public/images/nav-journal.png`
+    *   Used In: `components/NavigationMenu.tsx`
+    *   Purpose: Image for the "Journal" navigation card.
+    *   Theme: Serene waterhole, hippo life.
+
+5.  **Observer Navigation Card**
+    *   Filename: `nav-observer.png`
+    *   Path: `./public/images/nav-observer.png`
+    *   Used In: `components/NavigationMenu.tsx`
+    *   Purpose: Image for the "Observer" navigation card.
+    *   Theme: Habitat view, observation point.
+
+6.  **Insights Navigation Card**
+    *   Filename: `nav-insights.png`
+    *   Path: `./public/images/nav-insights.png`
+    *   Used In: `components/NavigationMenu.tsx`
+    *   Purpose: Image for the "Insights" navigation card.
+    *   Theme: Lush jungle, nature details.
+
+7.  **Community Navigation Card**
+    *   Filename: `nav-community.png`
+    *   Path: `./public/images/nav-community.png`
+    *   Used In: `components/NavigationMenu.tsx`
+    *   Purpose: Image for the "Join Our Pod" (Community) navigation card.
+    *   Theme: Community, nature connection.
+
+--- HIPPO PROFILE IMAGES ---
+
+8.  **Moodeng's Profile Picture**
+    *   Filename: `moodeng-profile.png`
+    *   Path: `./public/images/moodeng-profile.png`
+    *   Used In: `services/geminiService.ts` (mock data), `screens/InsightsScreen.tsx` (ProfileCard).
+    *   Purpose: Profile image for Moodeng.
+    *   Suggestion: Clear portrait of an adult pygmy hippo. (Displayed ~160x160 to 192x192).
+
+9.  **Piko's Profile Picture**
+    *   Filename: `piko-profile.png`
+    *   Path: `./public/images/piko-profile.png`
+    *   Used In: `services/geminiService.ts` (mock data), `screens/InsightsScreen.tsx` (ProfileCard).
+    *   Purpose: Profile image for Piko.
+    *   Suggestion: Clear portrait of a baby/young pygmy hippo. (Displayed ~160x160 to 192x192).
+
+--- JOURNAL & MILESTONE IMAGES ---
+
+10. **Journal Entry Default Image 1**
+    *   Filename: `journal-adventure-default-1.png`
+    *   Path: `./public/images/journal-adventure-default-1.png`
+    *   Used In: `services/geminiService.ts` (mock data for JournalScreen).
+    *   Purpose: A default image for journal entries.
+    *   Suggestion: General hippo activity or habitat scene. (Displayed h-64, object-cover).
+
+11. **Journal Entry Default Image 2**
+    *   Filename: `journal-adventure-default-2.png`
+    *   Path: `./public/images/journal-adventure-default-2.png`
+    *   Used In: `services/geminiService.ts` (mock data for JournalScreen).
+    *   Purpose: An alternative default image for journal entries.
+    *   Suggestion: Different general hippo activity or habitat scene. (Displayed h-64, object-cover).
+    *   Note: You can create more specific images for individual journal entries by modifying `services/geminiService.ts`.
+
+12. **Piko's First Swim Milestone**
+    *   Filename: `milestone-piko-first-swim.png`
+    *   Path: `./public/images/milestone-piko-first-swim.png`
+    *   Used In: `screens/JournalScreen.tsx`
+    *   Purpose: Image for Piko's "First Swim" milestone. (Displayed w-20 h-20).
+
+13. **Piko's Foraging Milestone**
+    *   Filename: `milestone-piko-foraging.png`
+    *   Path: `./public/images/milestone-piko-foraging.png`
+    *   Used In: `screens/JournalScreen.tsx`
+    *   Purpose: Image for Piko's "New Foraging Behavior" milestone. (Displayed w-20 h-20).
+
+14. **Moodeng Teaching Milestone**
+    *   Filename: `milestone-moodeng-teaching.png`
+    *   Path: `./public/images/milestone-moodeng-teaching.png`
+    *   Used In: `screens/JournalScreen.tsx`
+    *   Purpose: Image for Moodeng "Teaching Piko" milestone. (Displayed w-20 h-20).
+
+15. **Moodeng Sunbathing Milestone**
+    *   Filename: `milestone-moodeng-sunbathing.png`
+    *   Path: `./public/images/milestone-moodeng-sunbathing.png`
+    *   Used In: `screens/JournalScreen.tsx`
+    *   Purpose: Image for Moodeng "Relaxed Sunbathing" milestone. (Displayed w-20 h-20).
+
+--- OBSERVER SCREEN ---
+
+16. **Observer Feed Placeholder**
+    *   Filename: `observer-feed-placeholder.png`
+    *   Path: `./public/images/observer-feed-placeholder.png`
+    *   Used In: `screens/ObserverScreen.tsx`
+    *   Purpose: Placeholder image for the "Live Video Feed Snippet".
+    *   Suggestion: A still shot from a habitat camera or a representative hippo scene. (Displayed with aspect-video).
+
+--- INSIGHTS SCREEN (PYGMY HIPPO FACTS) ---
+
+These images are for the fact cards on the Insights screen.
+Suggested aspect: Wider than tall, displayed at h-40.
+
+17. **Fact Card: Habitat**
+    *   Filename: `fact-habitat.png`
+    *   Path: `./public/images/fact-habitat.png`
+    *   Used In: `services/geminiService.ts` (mock data for InsightsScreen).
+    *   Purpose: Image for "Habitat" fact card.
+
+18. **Fact Card: Diet**
+    *   Filename: `fact-diet.png`
+    *   Path: `./public/images/fact-diet.png`
+    *   Used In: `services/geminiService.ts` (mock data for InsightsScreen).
+    *   Purpose: Image for "Diet" fact card.
+
+19. **Fact Card: Social Structure**
+    *   Filename: `fact-social.png`
+    *   Path: `./public/images/fact-social.png`
+    *   Used In: `services/geminiService.ts` (mock data for InsightsScreen).
+    *   Purpose: Image for "Social Structure" fact card.
+
+20. **Fact Card: Unique Adaptations**
+    *   Filename: `fact-adaptations.png`
+    *   Path: `./public/images/fact-adaptations.png`
+    *   Used In: `services/geminiService.ts` (mock data for InsightsScreen).
+    *   Purpose: Image for "Unique Adaptations" fact card.
+
+21. **Fact Card: Size**
+    *   Filename: `fact-size.png`
+    *   Path: `./public/images/fact-size.png`
+    *   Used In: `services/geminiService.ts` (mock data for InsightsScreen).
+    *   Purpose: Image for "Size" fact card.
+
+22. **Fact Card: Water Dependency**
+    *   Filename: `fact-water.png`
+    *   Path: `./public/images/fact-water.png`
+    *   Used In: `services/geminiService.ts` (mock data for InsightsScreen).
+    *   Purpose: Image for "Water Dependency" fact card.
+
+--- COMMUNITY SCREEN & TEAM MEMBERS ---
+
+23. **Team Member: Dr. Elara Vance**
+    *   Filename: `team-elara-vance.png`
+    *   Path: `./public/images/team-elara-vance.png`
+    *   Used In: `services/geminiService.ts` (mock data), `screens/CommunityScreen.tsx`.
+    *   Purpose: Profile picture for team member. (Displayed w-32 h-32, rounded).
+
+24. **Team Member: Ben Carter**
+    *   Filename: `team-ben-carter.png`
+    *   Path: `./public/images/team-ben-carter.png`
+    *   Used In: `services/geminiService.ts` (mock data), `screens/CommunityScreen.tsx`.
+    *   Purpose: Profile picture for team member. (Displayed w-32 h-32, rounded).
+
+25. **Team Member: Aisha Khan**
+    *   Filename: `team-aisha-khan.png`
+    *   Path: `./public/images/team-aisha-khan.png`
+    *   Used In: `services/geminiService.ts` (mock data), `screens/CommunityScreen.tsx`.
+    *   Purpose: Profile picture for team member. (Displayed w-32 h-32, rounded).
+
+26. **Community Support Card Background**
+    *   Filename: `community-support-bg.png`
+    *   Path: `./public/images/community-support-bg.png`
+    *   Used In: `screens/CommunityScreen.tsx`
+    *   Purpose: Background image for the "Support Moodeng & Piko" card.
+    *   Suggestion: An image evoking conservation or community support.
+
+--- TROUBLESHOOTING CHECKLIST (If images are still not showing locally) ---
+
+1.  **Exact Filenames:** Have you renamed YOUR image files to EXACTLY match the `Filename` specified above for each image?
+    *   This includes being case-sensitive (e.g., `frontpage-bg.png` is different from `Frontpage-bg.png` or `frontpage-bg.PNG`).
+    *   Ensure the extension is `.png` for all files.
+
+2.  **Correct Folder Structure:**
+    *   Is there a folder named `public` in the SAME directory as your `index.html` file?
+    *   Inside that `public` folder, is there a folder named `images`?
+    *   Are all your `.png` image files placed DIRECTLY inside this `public/images/` folder?
+
+3.  **No Typos:** Double-check for any typos in your folder names (`public`, `images`) or your filenames.
+
+4.  **Browser Cache:** Try clearing your browser's cache completely.
+    *   Alternatively, open `index.html` in an incognito/private browsing window. This often bypasses the cache.
+
+5.  **Developer Tools (Essential for Debugging):**
+    *   Open your browser's Developer Tools (usually by pressing F12, or right-click on the page and select "Inspect").
+    *   Go to the **"Network"** tab.
+    *   Reload your `index.html` page (Ctrl+R or Cmd+R).
+    *   Look for any lines in the Network tab that correspond to your image files (e.g., `frontpage-bg.png`).
+    *   If an image failed to load, it will usually be highlighted in red, and its "Status" will be `404 Not Found` or similar.
+    *   Click on the failed image request. In the "Headers" section, you can see the exact "Request URL" the browser tried to load. This will tell you if the path is incorrect.
+    *   Also check the **"Console"** tab in Developer Tools for any error messages related to loading resources.
+
+By carefully following this guide and the troubleshooting checklist, you should be able to get your images displaying correctly. Good luck!
