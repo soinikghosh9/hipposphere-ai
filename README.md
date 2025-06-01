@@ -255,10 +255,9 @@ This section focuses on setting up the core Behavior Analysis Pipeline.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <your_repository_url_here> HippoSphereAI
-    cd HippoSphereAI
+    git clone https://github.com/soinikghosh9/hipposphere-ai.git
+    cd hipposphere-ai
     ```
-    *(Replace `<your_repository_url_here>` with the actual URL of your Git repository).*
 
 2.  **Create and Activate the Conda Environment:**
     The `environment.yml` file (expected in `HippoSphereAI/src/`) defines the necessary Python packages. 
@@ -270,7 +269,7 @@ This section focuses on setting up the core Behavior Analysis Pipeline.
 
 ### API Key Setup
 
-* In the **root directory** of the project (`HippoSphereAI/`), create a file named `.env`. 
+* In the **root directory** of the project (`hipposphere-ai/`), create a file named `.env`. 
 * Add your Google Gemini API key to this file: 
     ```
     GEMINI_API_KEY=YOUR_ACTUAL_GEMINI_API_KEY
