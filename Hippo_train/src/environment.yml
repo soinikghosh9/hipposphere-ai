@@ -1,0 +1,56 @@
+# HippoSphereAI/src/environment.yml
+name: hipposphere_ai   # New environment name for clarity with the CNN focus
+channels:
+  - pytorch             # For PyTorch and its CUDA components
+  - nvidia              # For CUDA toolkit if needed by PyTorch/TF
+  - conda-forge         # For many general packages, potentially OpenCV, TF dependencies
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2.0           # Start with <2.0 for broader compatibility, can test unpinning later
+
+  # Core CV, Data Science, and Utility Libraries (from conda channels)
+  - pandas>=1.5
+  - scikit-learn>=1.2
+  - opencv>=4.6         # For image/video processing
+  - matplotlib>=3.5     # For plotting (if any, or by dependencies)
+  - jupyterlab>=3.5     # For notebooks and experimentation
+  - h5py                # For saving/loading Keras models in .h5 format
+  - pillow              # Image processing, often a Keras/TF dependency
+  - tqdm                # Progress bars
+
+  # PyTorch (primarily for Ultralytics if used for YOLOv5 ONNX export, or future use)
+  # This targets CUDA 11.8, which should align with TensorFlow 2.15's needs too.
+  - pytorch::pytorch>=2.1.0
+  - pytorch::torchvision>=0.16.0
+  - pytorch::torchaudio>=2.1.0
+  - pytorch::pytorch-cuda=11.8  # Metapackage for CUDA 11.8 compatible PyTorch components, or cuda=12.1 for onnxruntime-gpu 
+
+  # Other utilities (can also be pip installed if preferred)
+  - python-dotenv
+
+  # Pip packages - for TensorFlow, Google libs, ONNX tools, etc.
+  - pip:
+    # 1. TensorFlow (for training and running your custom CNN)
+    #    TF 2.15.x generally uses CUDA 11.8 and cuDNN 8.6
+    #    The pytorch-cuda=11.8 above should make CUDA 11.8 available in the env path.
+    #    TensorFlow installed via pip should then find and use it.
+    - tensorflow==2.15.*       # Let pip pick the latest patch for 2.15. GPU support will be used if CUDA/cuDNN are found.
+
+    # 2. Google Generative AI and its dependencies
+    #    These generally prefer newer protobuf. TensorFlow 2.15 is more tolerant than 2.10.
+    - google-generativeai
+    # - "protobuf>=4.23.0,<5.0.0" # Optionally pin protobuf if needed after testing,
+                                  # but let TF and Google libs try to resolve it first.
+                                  # Avoid protobuf 5.x for now if possible, as TF might not fully support it yet.
+
+    # 3. ONNX, ONNXRuntime (for initial VideoProcessor detector), and Ultralytics (for YOLO export)
+    - onnx>=1.15.0
+    - onnxruntime-gpu          # For running initial YOLOv5s ONNX on GPU
+    - ultralytics              # For YOLO model handling/export if you do it within this env
+
+    # 4. Other Keras/TF related utilities that might be useful
+    #    (scikit-image is often useful, tables for HDF5 if not from conda)
+    - scikit-image
+    # - tables # If not getting from conda

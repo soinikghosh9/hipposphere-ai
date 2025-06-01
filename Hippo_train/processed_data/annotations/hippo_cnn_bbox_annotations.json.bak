@@ -1,0 +1,808 @@
+[
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_126125_126499.mp4",
+        "frame_number": 193,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            271,
+            83,
+            133,
+            88
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_126125_126499_f193_20250601_172141_311645.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_126125_126499.mp4",
+        "frame_number": 352,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            483,
+            59,
+            41,
+            43
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_126125_126499_f352_20250601_172156_831266.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 121,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            142,
+            61,
+            64,
+            33
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_131875_132749_f121_20250601_172214_728524.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 325,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            158,
+            63,
+            43,
+            27
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_131875_132749_f325_20250601_172232_006756.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 464,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            102,
+            141,
+            127,
+            82
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_131875_132749_f464_20250601_172245_672118.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_134250_135749.mp4",
+        "frame_number": 11,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            298,
+            194,
+            154,
+            76
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_134250_135749_f11_20250601_172311_006166.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_134250_135749.mp4",
+        "frame_number": 65,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            334,
+            140,
+            86,
+            41
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_134250_135749_f65_20250601_172321_806497.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_135875_136374.mp4",
+        "frame_number": 209,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            64,
+            102,
+            86,
+            62
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_135875_136374_f209_20250601_172404_655229.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_199625_199999.mp4",
+        "frame_number": 169,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            275,
+            70,
+            118,
+            77
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_199625_199999_f169_20250601_172433_286729.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_200125_200624.mp4",
+        "frame_number": 39,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            154,
+            135,
+            138,
+            72
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_200125_200624_f39_20250601_172448_140611.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_200125_200624.mp4",
+        "frame_number": 39,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            384,
+            111,
+            76,
+            66
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_200125_200624_f39_20250601_172450_868352.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_200125_200624.mp4",
+        "frame_number": 202,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            157,
+            65,
+            35,
+            15
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_200125_200624_f202_20250601_172507_677216.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_202250_202749.mp4",
+        "frame_number": 69,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            112,
+            65,
+            89,
+            43
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_202250_202749_f69_20250601_172521_596392.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_202250_202749.mp4",
+        "frame_number": 69,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            318,
+            70,
+            87,
+            59
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_202250_202749_f69_20250601_172524_884966.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_203250_203874.mp4",
+        "frame_number": 103,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            251,
+            41,
+            86,
+            53
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_203250_203874_f103_20250601_172545_180976.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_206000_206874.mp4",
+        "frame_number": 52,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            162,
+            72,
+            22,
+            20
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_206000_206874_f52_20250601_172603_060156.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_206000_206874.mp4",
+        "frame_number": 52,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            465,
+            206,
+            80,
+            106
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_206000_206874_f52_20250601_172607_804042.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_206000_206874.mp4",
+        "frame_number": 117,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            314,
+            110,
+            74,
+            69
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_206000_206874_f117_20250601_172617_628998.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_206000_206874.mp4",
+        "frame_number": 329,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            176,
+            60,
+            13,
+            30
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_206000_206874_f329_20250601_172636_516820.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_206000_206874.mp4",
+        "frame_number": 329,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            172,
+            62,
+            41,
+            31
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_206000_206874_f329_20250601_172646_156101.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_207000_207374.mp4",
+        "frame_number": 40,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            403,
+            38,
+            47,
+            46
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_207000_207374_f40_20250601_172703_180338.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_207000_207374.mp4",
+        "frame_number": 40,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            346,
+            44,
+            56,
+            41
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_207000_207374_f40_20250601_172705_547298.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_207000_207374.mp4",
+        "frame_number": 40,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            150,
+            88,
+            86,
+            54
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_207000_207374_f40_20250601_172709_395785.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_207500_208249.mp4",
+        "frame_number": 62,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            338,
+            69,
+            48,
+            25
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_207500_208249_f62_20250601_172740_738715.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_207500_208249.mp4",
+        "frame_number": 62,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            309,
+            41,
+            96,
+            46
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_207500_208249_f62_20250601_172744_058360.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_207500_208249.mp4",
+        "frame_number": 62,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            81,
+            126,
+            198,
+            96
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_207500_208249_f62_20250601_172747_587455.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_209750_210124.mp4",
+        "frame_number": 83,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            130,
+            89,
+            84,
+            145
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_209750_210124_f83_20250601_172810_763314.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_209750_210124.mp4",
+        "frame_number": 134,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            226,
+            180,
+            40,
+            42
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_209750_210124_f134_20250601_172816_898734.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_209750_210124.mp4",
+        "frame_number": 208,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            186,
+            73,
+            80,
+            177
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_209750_210124_f208_20250601_172824_226417.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_210250_210874.mp4",
+        "frame_number": 39,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            195,
+            62,
+            41,
+            56
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_210250_210874_f39_20250601_172834_818894.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_210250_210874.mp4",
+        "frame_number": 39,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            157,
+            65,
+            31,
+            27
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_210250_210874_f39_20250601_172838_562251.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_212875_213249.mp4",
+        "frame_number": 31,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            214,
+            85,
+            49,
+            97
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_212875_213249_f31_20250601_172858_921835.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_212875_213249.mp4",
+        "frame_number": 31,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            174,
+            116,
+            36,
+            58
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_212875_213249_f31_20250601_172902_290096.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_307375_307749.mp4",
+        "frame_number": 33,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            130,
+            131,
+            132,
+            68
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_307375_307749_f33_20250601_172933_785535.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_307375_307749.mp4",
+        "frame_number": 33,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            87,
+            266,
+            107,
+            66
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_307375_307749_f33_20250601_172941_377813.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_307375_307749.mp4",
+        "frame_number": 59,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            413,
+            202,
+            133,
+            114
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_307375_307749_f59_20250601_172948_090293.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_67750_68249.mp4",
+        "frame_number": 45,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            220,
+            55,
+            58,
+            33
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_67750_68249_f45_20250601_173004_113979.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_70250_70999.mp4",
+        "frame_number": 33,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            30,
+            272,
+            14,
+            28
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_70250_70999_f33_20250601_173036_144990.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_70250_70999.mp4",
+        "frame_number": 64,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            36,
+            268,
+            133,
+            93
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_70250_70999_f64_20250601_173043_216817.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_70250_70999.mp4",
+        "frame_number": 64,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            382,
+            192,
+            104,
+            63
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_70250_70999_f64_20250601_173046_560921.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_73375_75999.mp4",
+        "frame_number": 32,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            6,
+            162,
+            112,
+            75
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_73375_75999_f32_20250601_173056_192395.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_126125_126499.mp4",
+        "frame_number": 161,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            104,
+            136,
+            158,
+            121
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_126125_126499_f161_20250601_173940_386444.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 381,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            233,
+            44,
+            81,
+            52
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_131875_132749_f381_20250601_174021_305186.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 381,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            166,
+            58,
+            56,
+            39
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_131875_132749_f381_20250601_174024_666118.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 381,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            272,
+            135,
+            121,
+            70
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_131875_132749_f381_20250601_174028_193983.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_134250_135749.mp4",
+        "frame_number": 44,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            276,
+            183,
+            167,
+            97
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_134250_135749_f44_20250601_174047_953580.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_134250_135749.mp4",
+        "frame_number": 61,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            366,
+            131,
+            80,
+            45
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_134250_135749_f61_20250601_174055_857572.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_134250_135749.mp4",
+        "frame_number": 61,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            52,
+            155,
+            153,
+            60
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_134250_135749_f61_20250601_174059_169753.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_135875_136374.mp4",
+        "frame_number": 42,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            78,
+            102,
+            80,
+            70
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_135875_136374_f42_20250601_174112_416605.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_135875_136374.mp4",
+        "frame_number": 42,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            136,
+            83,
+            30,
+            35
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_135875_136374_f42_20250601_174115_064629.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_135875_136374.mp4",
+        "frame_number": 42,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            470,
+            92,
+            97,
+            84
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_135875_136374_f42_20250601_174122_264243.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_199625_199999.mp4",
+        "frame_number": 94,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            276,
+            76,
+            110,
+            71
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_199625_199999_f94_20250601_174134_200537.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_200125_200624.mp4",
+        "frame_number": 46,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            146,
+            143,
+            141,
+            67
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_200125_200624_f46_20250601_174141_368029.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_200125_200624.mp4",
+        "frame_number": 46,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            152,
+            58,
+            36,
+            18
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_200125_200624_f46_20250601_174146_657034.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_200125_200624.mp4",
+        "frame_number": 103,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            43,
+            84,
+            43,
+            33
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_200125_200624_f103_20250601_174156_320451.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 15,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            188,
+            88,
+            123,
+            69
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_131875_132749_f15_20250601_234941_286166.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 501,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            280,
+            43,
+            84,
+            45
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_131875_132749_f501_20250601_235003_261328.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 501,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            202,
+            48,
+            64,
+            36
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_131875_132749_f501_20250601_235010_876837.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_131875_132749.mp4",
+        "frame_number": 635,
+        "label_id_profile": 0,
+        "class_idx_cnn": 2,
+        "bbox": [
+            359,
+            142,
+            215,
+            84
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/background\\bg_annot_20250109_3_segment_131875_132749_f635_20250601_235024_597154.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_133750_134124.mp4",
+        "frame_number": 114,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            554,
+            97,
+            52,
+            71
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_133750_134124_f114_20250601_235046_861406.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_134250_135749.mp4",
+        "frame_number": 79,
+        "label_id_profile": 1,
+        "class_idx_cnn": 0,
+        "bbox": [
+            267,
+            212,
+            180,
+            64
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo1_large\\hippo1_20250109_3_segment_134250_135749_f79_20250601_235109_380165.png"
+    },
+    {
+        "video_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\clips\\20250109_3_segment_134250_135749.mp4",
+        "frame_number": 79,
+        "label_id_profile": 2,
+        "class_idx_cnn": 1,
+        "bbox": [
+            224,
+            173,
+            93,
+            43
+        ],
+        "patch_path": "C:\\Users\\User\\Downloads\\Backend\\Hippo_train\\processed_data\\cnn_patches/hippo2_small\\hippo2_20250109_3_segment_134250_135749_f79_20250601_235112_964327.png"
+    }
+]
