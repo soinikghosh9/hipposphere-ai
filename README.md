@@ -299,7 +299,7 @@ python -m src.main
 ```
 This will present a menu with workflow options. 
 
-📋 Step-by-Step ### Workflow
+### 📋 Step-by-Step Workflow
 
 After running `python -m src.main` from the `Hippo_train` directory (or your equivalent AI pipeline directory), follow the CLI menu:
 
