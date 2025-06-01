@@ -118,7 +118,9 @@ The core AI pipeline involves several key stages:
 * Movement velocity and spatial preference mapping for emotional state assessment.
 
 ### Annotation Methodology
-Our study utilized a two-stage annotation process to develop a comprehensive dataset from video footage captured at [Your Study Site/Source]. Initially, for hippo detection (Task 1B), individual hippos were localized with bounding boxes and identified as one of two primary profiles – "Hippo 1 (L)" [Moodenf the hippo] or "Hippo 2 (S)" [Moodeng's kid, Piko] – or as "Background," with corresponding image patches extracted for CNN training. Subsequently, for behavioral and emotional state analysis (Task 2B), an interactive tool facilitated the labeling of [config.SEQUENCE_LENGTH, e.g., 30]-frame sequences for each identified hippo. Annotators assigned behaviors from six primary classes: **resting_or_sleeping**, **feeding_or_grazing**, walking_or_pacing, **swimming_or_wallowing**, **social_interaction**, and **other_active**, using direct key inputs ('1'-'6'). If applicable, inferred emotional states were then labeled from four types: **Neutral_Calm**, **Alert_Curious**, **Playful_Active**, and **Stressed_Agitated**, using keys 'z' through 'v'. This dual-stage approach yielded a rich dataset linking visual patterns to specific hippo identities, behaviors, and inferred affective states, forming the basis for training our detection and classification models.
+
+Our study utilized a two-stage annotation process to develop a comprehensive dataset from video footage captured at [Your Study Site/Source]. Initially, for hippo detection (Task 1B), individual hippos were localized with bounding boxes and identified as one of two primary profiles – "Hippo 1 (L)" [Moodeng the hippo] or "Hippo 2 (S)" [Moodeng's kid, Piko] – or as "Background," with corresponding image patches extracted for CNN training. Subsequently, for behavioral and emotional state analysis (Task 2B), an interactive tool facilitated the labeling of [config.SEQUENCE_LENGTH, e.g., 30]-frame sequences for each identified hippo. Annotators assigned behaviors from six primary classes: **resting_or_sleeping**, **feeding_or_grazing**, walking_or_pacing, **swimming_or_wallowing**, **social_interaction**, and **other_active**, using direct key inputs ('1'-'6'). If applicable, inferred emotional states were then labeled from four types: **Neutral_Calm**, **Alert_Curious**, **Playful_Active**, and **Stressed_Agitated**, using keys 'z' through 'v'. This dual-stage approach yielded a rich dataset linking visual patterns to specific hippo identities, behaviors, and inferred affective states, forming the basis for training our detection and classification models.
+
 ---
 
 ## 📊 Results & Impact
@@ -141,6 +143,75 @@ Our study utilized a two-stage annotation process to develop a comprehensive dat
 ---
 
 ## 🛠️ Installation & Setup (Behavior Analysis Pipeline)
+
+### Directory Structure
+
+```text
+hipposphere-ai-moodeng-pikos-world/
+├── .env.local
+├── .gitignore
+├── ai_model_card.pdf
+├── ai_model_footprint.pdf
+├── App.tsx                     # Main React App component (root level)
+├── eslint.config.js
+├── index.html                  # Main HTML for frontend
+├── index.tsx                   # React entry point (root level)
+├── metadata.json
+├── package-lock.json
+├── package.json                # Node.js project configuration for frontend
+├── public/                     # Static assets for frontend
+│   └── ... (frontend public assets)
+├── src/                        # Frontend source code (React/TypeScript)
+│   ├── App.css
+│   ├── App.tsx                 # Main React App component (inside src/)
+│   ├── assets/
+│   │   └── ... (frontend assets like images, fonts)
+│   ├── components/
+│   │   └── ... (React components)
+│   ├── constants.ts
+│   ├── global.d.ts
+│   ├── index.css
+│   ├── main.tsx                # Typical entry point for Vite React apps
+│   ├── screens/
+│   │   └── ... (React screen components)
+│   ├── services/
+│   │   └── ... (Frontend services, API calls etc.)
+│   ├── types.ts
+│   └── vite-env.d.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── node_modules/               # Frontend dependencies
+│   └── ...
+└── Hippo_train/                # Backend / AI Behavior Analysis Pipeline
+    ├── .env                    # API keys and environment variables for backend
+    ├── data/                   # Raw data for AI model (e.g., videos)
+    │   └── ...
+    ├── models/                 # Trained AI models, initial detection models
+    │   └── ... (e.g., yolov5s.onnx, coco.names, hippo_detector_cnn.h5)
+    ├── processed_data/         # Intermediate data from AI pipeline
+    │   ├── annotations/        # (e.g., hippo_cnn_bbox_annotations.json)
+    │   ├── behavior_annotations/ # (e.g., hippo_behavior_annotations.json, .csv)
+    │   ├── clips/              # Generated video clips for annotation
+    │   ├── cnn_patches/        # Image patches for CNN training
+    │   └── detections_and_features/ # (e.g., *_detections.json, *_features.json)
+    ├── src/                    # Python source code for AI pipeline
+    │   ├── __init__.py
+    │   ├── __pycache__/
+    │   │   └── ...
+    │   ├── annotation_tool.py
+    │   ├── behavior_classifier.py
+    │   ├── cnn_hippo_detector.py
+    │   ├── config.py
+    │   ├── environment.yml     # Conda environment definition for backend
+    │   ├── feature_extractor.py
+    │   ├── gemini_handler.py
+    │   ├── main.py             # Main script to run AI pipeline (CLI menu)
+    │   └── video_processor.py
+    └── yolov5/                 # YOLOv5 source or related utilities
+        └── ...
+```
 
 This section focuses on setting up the core Behavior Analysis Pipeline. 
 
