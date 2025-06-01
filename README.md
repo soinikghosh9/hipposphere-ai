@@ -306,93 +306,93 @@ After running `python -m src.main` from the `Hippo_train` directory (or your equ
 
 **--- Setup & Training for Custom CNN Hippo Detector ---**
 
-1.  **`1A. Generate CLIPS from TRAIN set`** [cite: 91]
-    * **Purpose:** Scans raw videos using a general object detector (e.g., YOLOv5s) to extract shorter clips where hippos are likely present. [cite: 98] This reduces the manual effort required to find relevant segments for annotation. [cite: 98]
-    * **Action:** Select Option `1A` from the menu. [cite: 99]
-    * **Output:** Video clips are saved in `HippoSphereAI/processed_data/clips/` (adjust path based on your `Hippo_train` structure if needed). [cite: 101]
-    * **Verification:** Review the generated clips. [cite: 101] If they are not relevant (e.g., too many false positives, hippos missed), you may need to adjust detection parameters in `src/config.py` (e.g., `DETECTION_CONF_THRESHOLD_VP`, `MIN_OBJECT_WIDTH_PERCENT_VP`, `MIN_OBJECT_HEIGHT_PERCENT_VP`, `MOTION_THRESHOLD_VP`) and re-run this step. [cite: 102]
+1.  **`1A. Generate CLIPS from TRAIN set`** 
+    * **Purpose:** Scans raw videos using a general object detector (e.g., YOLOv5s) to extract shorter clips where hippos are likely present. This reduces the manual effort required to find relevant segments for annotation. 
+    * **Action:** Select Option `1A` from the menu. 
+    * **Output:** Video clips are saved in `HippoSphereAI/processed_data/clips/` (adjust path based on your `Hippo_train` structure if needed). 
+    * **Verification:** Review the generated clips. If they are not relevant (e.g., too many false positives, hippos missed), you may need to adjust detection parameters in `src/config.py` (e.g., `DETECTION_CONF_THRESHOLD_VP`, `MIN_OBJECT_WIDTH_PERCENT_VP`, `MIN_OBJECT_HEIGHT_PERCENT_VP`, `MOTION_THRESHOLD_VP`) and re-run this step. 
 
-2.  **`1B. Annotate BBoxes on CLIPS`** [cite: 92]
-    * **Purpose:** Manually draw bounding boxes around "Hippo 1", "Hippo 2", and "Background" regions in the clips generated in the previous step. [cite: 103] This creates the training dataset for the custom CNN hippo detector. [cite: 104]
+2.  **`1B. Annotate BBoxes on CLIPS`** 
+    * **Purpose:** Manually draw bounding boxes around "Hippo 1", "Hippo 2", and "Background" regions in the clips generated in the previous step. This creates the training dataset for the custom CNN hippo detector. 
     * **Crucial Preparation:**
-        * Manually collect a diverse set of image patches that represent **background** scenes from your videos (without hippos) or similar environments. [cite: 105]
-        * Save these as individual image files (e.g., `.png`, `.jpg`) into the `HippoSphereAI/processed_data/cnn_patches/background/` directory (or your equivalent path). [cite: 106] The more varied these are, the better the CNN will learn to distinguish hippos from non-hippo regions. [cite: 107]
-    * **Action:** Select Option `1B`. [cite: 108] An OpenCV window will open for annotation. [cite: 108]
+        * Manually collect a diverse set of image patches that represent **background** scenes from your videos (without hippos) or similar environments.
+        * Save these as individual image files (e.g., `.png`, `.jpg`) into the `HippoSphereAI/processed_data/cnn_patches/background/` directory (or your equivalent path). The more varied these are, the better the CNN will learn to distinguish hippos from non-hippo regions. 
+    * **Action:** Select Option `1B`. An OpenCV window will open for annotation. 
         * Follow console prompts and on-screen instructions for using the annotation tool:
-            * `p`: Pause/Resume video playback within a clip. [cite: 109]
-            * `f`: Next frame (when paused). [cite: 109]
-            * `a`: Toggle "Annotation Mode" ON/OFF. [cite: 110]
+            * `p`: Pause/Resume video playback within a clip. 
+            * `f`: Next frame (when paused). 
+            * `a`: Toggle "Annotation Mode" ON/OFF. 
             * When Annotation Mode is ON:
-                * `0`: Select "Background" for annotation. [cite: 111]
-                * `1`: Select "Hippo 1" for annotation. [cite: 112]
-                * `2`: Select "Hippo 2" for annotation. [cite: 112]
-                * Draw a bounding box with your mouse. [cite: 113]
-            * `ESC`: Cancel current ID selection (if you chose the wrong ID to annotate). [cite: 114]
-            * `s`: Manually save current annotations (though it also saves after each box). [cite: 115]
-            * `n`: Skip to the next video clip. [cite: 116]
-            * `q`: Quit annotation mode and return to the main menu. [cite: 117]
+                * `0`: Select "Background" for annotation.
+                * `1`: Select "Hippo 1" for annotation. 
+                * `2`: Select "Hippo 2" for annotation. 
+                * Draw a bounding box with your mouse. 
+            * `ESC`: Cancel current ID selection (if you chose the wrong ID to annotate). 
+            * `s`: Manually save current annotations (though it also saves after each box). 
+            * `n`: Skip to the next video clip. 
+            * `q`: Quit annotation mode and return to the main menu.
     * **Output:**
-        * Image patches cropped based on your bounding boxes will be saved into respective directories under `HippoSphereAI/processed_data/cnn_patches/` (e.g., `hippo1_large/`, `hippo2_small/`, `background/`). [cite: 118]
-        * Annotation metadata (paths, bboxes, labels) saved in `HippoSphereAI/processed_data/annotations/hippo_cnn_bbox_annotations.json`. [cite: 119]
+        * Image patches cropped based on your bounding boxes will be saved into respective directories under `HippoSphereAI/processed_data/cnn_patches/` (e.g., `hippo1_large/`, `hippo2_small/`, `background/`). 
+        * Annotation metadata (paths, bboxes, labels) saved in `HippoSphereAI/processed_data/annotations/hippo_cnn_bbox_annotations.json`. 
 
-3.  **`1C. Train Custom CNN Hippo Detector`** [cite: 93]
-    * **Purpose:** Trains the Keras CNN model (defined in `src/cnn_hippo_detector.py`) using the image patches and annotations created in Step 1B. [cite: 120]
-    * **Prerequisites:** A sufficient number of annotated patches for each class (Hippo 1, Hippo 2, Background) and general background patches in the respective directories. [cite: 120]
+3.  **`1C. Train Custom CNN Hippo Detector`** 
+    * **Purpose:** Trains the Keras CNN model (defined in `src/cnn_hippo_detector.py`) using the image patches and annotations created in Step 1B. 
+    * **Prerequisites:** A sufficient number of annotated patches for each class (Hippo 1, Hippo 2, Background) and general background patches in the respective directories. 
     * **Action:** Select Option `1C`.
-    * **Output:** The trained CNN model saved as `hippo_detector_cnn.h5` (or as per `CNN_MODEL_SAVE_PATH` in `config.py`) in `HippoSphereAI/models/`. [cite: 121]
-    * **Verification:** Monitor TensorFlow/Keras training progress (loss, accuracy) printed in the console. [cite: 122]
+    * **Output:** The trained CNN model saved as `hippo_detector_cnn.h5` (or as per `CNN_MODEL_SAVE_PATH` in `config.py`) in `HippoSphereAI/models/`. 
+    * **Verification:** Monitor TensorFlow/Keras training progress (loss, accuracy) printed in the console. 
 
 **--- Behavior Analysis Pipeline (Uses Trained CNN Detector) ---**
 
-4.  **`2A. Process TRAIN Clips: CNN Detect -> Extract BBox Features`** [cite: 94]
-    * **Purpose:** Runs your trained custom CNN detector on the training clips to detect hippos and then uses `FeatureExtractor` to convert these bounding box detections into feature vectors suitable for the behavior classifier. [cite: 123]
-    * **Prerequisites:** Successful completion of Option `1C` (custom CNN is trained and saved). [cite: 124]
+4.  **`2A. Process TRAIN Clips: CNN Detect -> Extract BBox Features`** 
+    * **Purpose:** Runs your trained custom CNN detector on the training clips to detect hippos and then uses `FeatureExtractor` to convert these bounding box detections into feature vectors suitable for the behavior classifier.
+    * **Prerequisites:** Successful completion of Option `1C` (custom CNN is trained and saved). 
     * **Action:** Select Option `2A`.
     * **Output:**
-        * `*_detections.json` files (raw bounding box detections from your CNN) in `HippoSphereAI/processed_data/detections_and_features/`. [cite: 125]
-        * `*_features.json` files (feature vectors derived from these bboxes) also in `HippoSphereAI/processed_data/detections_and_features/`. [cite: 126]
-    * **Verification:** Check if these JSON files are created and if the bounding box data seems reasonable. [cite: 127]
+        * `*_detections.json` files (raw bounding box detections from your CNN) in `HippoSphereAI/processed_data/detections_and_features/`. 
+        * `*_features.json` files (feature vectors derived from these bboxes) also in `HippoSphereAI/processed_data/detections_and_features/`. 
+    * **Verification:** Check if these JSON files are created and if the bounding box data seems reasonable. 
 
 5.  **`2B. Annotate BEHAVIORS on TRAIN Features (Using AnnotationTool.py)`**
-    * **Purpose:** Manually label behavior sequences (e.g., "resting", "feeding") by watching the clips. [cite: 128] The system uses the features extracted in Step 2A (derived from your custom CNN's detections) to define the sequences for labeling. [cite: 129]
-    * **Prerequisites:** Successful completion of Option `2A`. [cite: 130]
-    * **Action:** Select Option `2B`. The `AnnotationTool.py` GUI (OpenCV window) will launch. [cite: 130]
+    * **Purpose:** Manually label behavior sequences (e.g., "resting", "feeding") by watching the clips. The system uses the features extracted in Step 2A (derived from your custom CNN's detections) to define the sequences for labeling. 
+    * **Prerequisites:** Successful completion of Option `2A`. 
+    * **Action:** Select Option `2B`. The `AnnotationTool.py` GUI (OpenCV window) will launch. 
     * **Output:**
-        * Behavior annotations saved to `HippoSphereAI/processed_data/behavior_annotations/hippo_behavior_annotations.json`. [cite: 131]
-        * This JSON is then automatically converted to `HippoSphereAI/processed_data/behavior_annotations/behavior_training_data_from_bbox.csv`. [cite: 132]
+        * Behavior annotations saved to `HippoSphereAI/processed_data/behavior_annotations/hippo_behavior_annotations.json`. 
+        * This JSON is then automatically converted to `HippoSphereAI/processed_data/behavior_annotations/behavior_training_data_from_bbox.csv`.
 
-6.  **`2C. Train BEHAVIOR Classifier`** [cite: 95]
+6.  **`2C. Train BEHAVIOR Classifier`** 
     * **Purpose:** Trains a machine learning model (e.g., RandomForest) using the bounding box-derived features and the behavior labels from Step 2B.
-    * **Prerequisites:** Successful completion of Option `2B`. [cite: 133]
+    * **Prerequisites:** Successful completion of Option `2B`. 
     * **Action:** Select Option `2C`.
     * **Output:**
-        * Trained behavior model (e.g., `hippo_behavior_classifier_bbox.joblib`) in `HippoSphereAI/models/`. [cite: 134]
-        * Associated label encoder and imputer also saved in `HippoSphereAI/models/`. [cite: 135]
-    * **Verification:** Check console for training accuracy and classification report. [cite: 136]
+        * Trained behavior model (e.g., `hippo_behavior_classifier_bbox.joblib`) in `HippoSphereAI/models/`. 
+        * Associated label encoder and imputer also saved in `HippoSphereAI/models/`. 
+    * **Verification:** Check console for training accuracy and classification report. 
 
 **--- Testing & Inference ---**
 
 7.  **`3A. Generate CLIPS from TEST set`**
     * This option is used if you have a separate set of videos designated for testing.
-    * **Action:** Select Option `3A`. [cite: 137]
+    * **Action:** Select Option `3A`. 
 
-8.  **`3B. Process TEST Clips: CNN Detect -> Extract BBox Features`** [cite: 96]
-    * This uses the trained custom CNN (from Option `1C`) to process the test clips. [cite: 138]
-    * **Action:** Select Option `3B`. [cite: 138]
+8.  **`3B. Process TEST Clips: CNN Detect -> Extract BBox Features`** 
+    * This uses the trained custom CNN (from Option `1C`) to process the test clips. 
+    * **Action:** Select Option `3B`. 
 
-9.  **`3C. Run Inference & Insights on TEST set`** [cite: 96]
-    * **Purpose:** Uses your trained custom CNN detector AND your trained behavior classifier to analyze test videos and generate insights using the Gemini API. [cite: 139]
+9.  **`3C. Run Inference & Insights on TEST set`** 
+    * **Purpose:** Uses your trained custom CNN detector AND your trained behavior classifier to analyze test videos and generate insights using the Gemini API. 
     * **Prerequisites:**
-        * Trained custom CNN detector (from Option `1C`). [cite: 140]
-        * Trained behavior classifier (from Option `2C`). [cite: 141]
-        * Processed test clips with features (from Option `3B`). [cite: 141]
-        * Valid Gemini API key in `.env`. [cite: 141]
-    * **Action:** Select Option `3C`. [cite: 142]
-    * **Output:** Predictions and Gemini content logged to console. [cite: 143]
+        * Trained custom CNN detector (from Option `1C`). 
+        * Trained behavior classifier (from Option `2C`). 
+        * Processed test clips with features (from Option `3B`). 
+        * Valid Gemini API key in `.env`. 
+    * **Action:** Select Option `3C`. 
+    * **Output:** Predictions and Gemini content logged to console. 
 
-10. **`3D. Run Inference & Insights on TRAIN set`** [cite: 97]
-    * Similar to `3C` but runs on your training data. [cite: 144]
-    * Useful for seeing performance on familiar data and generating content. [cite: 145]
+10. **`3D. Run Inference & Insights on TRAIN set`** 
+    * Similar to `3C` but runs on your training data. 
+    * Useful for seeing performance on familiar data and generating content. 
 
 11. **`4. EXIT`**
     * Exits the application.
