@@ -1,4 +1,4 @@
-# HippoSphere AI: Automated Monitoring and Behavioral Analysis of Captive Pygmy Hippopotamuses 🦛💧🧠🤖
+# HippoSphere AI: Automated Monitoring and Behavioral Analysis of Captive Pygmy Hippopotamuses 🦛🍀🧠🤖
 
 **Automated Monitoring and Behavioral Analysis of Captive Pygmy Hippopotamuses Using Lightweight Deep Learning and Sustainable Computer Vision.**
 
