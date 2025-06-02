@@ -461,10 +461,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 🤝 Team Behind This Project
 
-*  Soinik Ghosh, PhD Candidate, Biomedical Engineering, Indian Institute of Technology (BHU) Varanasi, India,  Lead Developer, Researcher & Artist contributing to HippoSphere AI with expertise in biomedical data and creative insights.
-*  Parikshith Chavakula, M.Tech, Biomedical Engineering, Indian Institute of Technology (BHU) Varanasi, India, Researcher & Artist, bringing a blend of technical skill and artistic vision to the project.
-*  Abhra Bhattacharyya, M.Tech, Biomedical Engineering, Indian Institute of Technology (BHU) Varanasi, India, Researcher focused on biomedical engineering applications within the HippoSphere AI project.
-*  Koushik Mukhopadhyay, Wildlife Filmmaker, Conservationist, Kolkata, India, Provides expertise in wildlife conservation, filmmaking, and field insights to enrich the HippoSphere narrative.
+*  **Soinik Ghosh**, PhD Candidate, Biomedical Engineering, Indian Institute of Technology (BHU) Varanasi, India,  Lead Developer, Researcher & Artist contributing to HippoSphere AI with expertise in biomedical data and creative insights.
+*  **Parikshith Chavakula**, M.Tech, Biomedical Engineering, Indian Institute of Technology (BHU) Varanasi, India, Researcher & Artist, bringing a blend of technical skill and artistic vision to the project.
+*  **Abhra Bhattacharyya**, M.Tech, Biomedical Engineering, Indian Institute of Technology (BHU) Varanasi, India, Researcher focused on biomedical engineering applications within the HippoSphere AI project.
+*  **Koushik Mukhopadhyay**, Wildlife Filmmaker, Conservationist, Kolkata, India, Provides expertise in wildlife conservation, filmmaking, and field insights to enrich the HippoSphere narrative.
 
 
 ## 📚 References (Key)
