@@ -10,6 +10,7 @@
 HippoSphere AI presents a revolutionary approach to animal welfare monitoring through sustainable, human-centered AI technology. We developed a comprehensive semi-supervised, lightweight, energy-efficient deep learning ecosystem to monitor pygmy hippopotamuses Moodeng and Piko from CCTV footage, enabling robust identification, tracking, behavioral classification, and narrative generation. This system addresses critical gaps in zoological management by combining computer vision, natural language processing, and collaborative storytelling to create meaningful connections between animals, caretakers, and the public while maintaining minimal environmental impact through edge-optimized architectures designed for future edge deployment.
 
 Watch the Demonstration video here: [https://drive.google.com/file/d/1dMP2OVJQQtv2YFinZAhu3zCbBnQrKa1T/view?usp=drivesdk](https://drive.google.com/file/d/1dMP2OVJQQtv2YFinZAhu3zCbBnQrKa1T/view?usp=drivesdk) 
+Check the UI/Web page Demo here: [https://hipposphere-ai-moodeng-piko-s-world-799198528168.us-west1.run.app/#/dashboard]
 
 ---
 
