@@ -114,7 +114,7 @@ The core AI pipeline involves several key stages:
 * Achieves an estimated **90% model size reduction** with minimal accuracy loss (<3%). 
 
 ### Behavioral & Emotional Intelligence
-* Temporal sequence modeling (e.g., LSTMs) for understanding long-term behavior.
+* Temporal sequence modeling for understanding long-term behavior.
 * Anomaly detection for potential health/stress indicators. 
 * Social interaction analysis between individuals. 
 * Movement velocity and spatial preference mapping for emotional state assessment.
