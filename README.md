@@ -11,7 +11,7 @@ HippoSphere AI presents a revolutionary approach to animal welfare monitoring th
 
 Watch the Demonstration video here: [https://drive.google.com/file/d/1dMP2OVJQQtv2YFinZAhu3zCbBnQrKa1T/view?usp=drivesdk](https://drive.google.com/file/d/1dMP2OVJQQtv2YFinZAhu3zCbBnQrKa1T/view?usp=drivesdk) 
 
-Check the UI/Web page Demo here: [https://hipposphere-ai-moodeng-piko-s-world-799198528168.us-west1.run.app/#/dashboard]
+Check the UI/Web page Demo here: https://hipposphere-ai-moodeng-piko-s-world-799198528168.us-west1.run.app/#/dashboard
 
 ---
 
